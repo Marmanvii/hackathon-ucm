@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-
+//  comentario de prueba en AppServiceProvider
     public function boot()
     {
         //
