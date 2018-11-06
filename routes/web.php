@@ -11,8 +11,6 @@
 |
 */
 
-//comentario en las rutas
-
 Route::get('/', function () {
     return view('welcome');
 });
