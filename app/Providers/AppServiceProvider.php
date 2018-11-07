@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-//comment
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
