@@ -1,3 +1,5 @@
+/app/Providers/AppServiceProvider.php
+/config/database.php
 /node_modules
 /public/hot
 /public/storage
