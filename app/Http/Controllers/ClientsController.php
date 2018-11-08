@@ -8,12 +8,16 @@ use GuzzleHttp\Client;
 class ClientsController extends Controller
 {
     public function index(){
+      return view('clients.index');
+    }
+    public function result(Request $request){
+      $rut = $request->rut;
       $client = new Client([
         'base_uri' => 'http://apifintech-team1.3it.cl/hackathon/',
       ]);
       $response = $client->request('GET', 'clients/all');
       $clients = json_decode($response->getBody()->getContents());
-      return view('clients.index', compact('clients'));
+      return view('clients.result', compact('clients','rut'));
     }
     public function show($rut){
       $product = new Client([

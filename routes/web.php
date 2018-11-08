@@ -16,7 +16,8 @@ Route::get('/', function () {
 });
 
 ##CLIENTS
-Route::get('/clients/all', 'ClientsController@index');
+Route::get('/clients', 'ClientsController@index');
+Route::any('/clients/result', 'ClientsController@result');
 Route::get('/clients/{rut}/products', 'ClientsController@show');
 
 ##CREDIT-CARDS
