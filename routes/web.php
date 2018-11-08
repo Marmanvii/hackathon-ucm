@@ -24,3 +24,4 @@ Route::get('/credit-cards/{productId}' , 'CreditCardsController@show');
 
 ##TEF
 Route::get('/tef/history/{productID}', 'TEFsController@show');
+Route::any('/tef/{productId}/create', 'TEFsController@create');

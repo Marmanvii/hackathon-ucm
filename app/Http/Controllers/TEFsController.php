@@ -15,4 +15,12 @@ class TEFsController extends Controller
       $histories = json_decode($response->getBody()->getContents());
       return view('tefs.show', compact('histories'));
     }
+    public function create(Request $request){
+      $productId = $request->id;
+      $limitAmount = $request->limitAmount;
+      return view('tefs.create', compact('productId','limitAmount'));
+    }
+    public function store(){
+      //
+    }
 }
