@@ -18,3 +18,9 @@ Route::get('/', function () {
 ##CLIENTS
 Route::get('/clients/all', 'ClientsController@index');
 Route::get('/clients/{rut}/products', 'ClientsController@show');
+
+##CREDIT-CARDS
+Route::get('/credit-cards/{productId}' , 'CreditCardsController@show');
+
+##TEF
+Route::get('/tef/history/{productID}', 'TEFsController@show');
