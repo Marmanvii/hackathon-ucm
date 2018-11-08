@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+##CLIENTS
+Route::get('/clients/all', 'ClientsController@index');
+Route::get('/clients/{rut}/products', 'ClientsController@show');
