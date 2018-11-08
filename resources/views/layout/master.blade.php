@@ -13,7 +13,9 @@
   </head>
   <body>
     @include('layout.nav')
+    <br><br><br><br>
     @yield('content')
+    <br><br><br><br>
     @include('layout.footer')
 
 
